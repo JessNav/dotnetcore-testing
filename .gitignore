@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+# Visual Studio Files
+.vs/
+.vs
+bin/
+obj/
+
+# User specific files
+*.user
+
+# LibMan package managed libraries (ie. bootstrap)
+**/lib
