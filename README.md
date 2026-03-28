@@ -1,0 +1,2 @@
+# dotnetcore-testing
+testing examples
