@@ -3,6 +3,7 @@
     <BuildDependency Project="App.Data/App.Data.csproj" />
   </Project>
   <Project Path="App.Data/App.Data.csproj" />
+  <Project Path="App.Testing.MSTest/App.Testing.MSTest.csproj" />
   <Project Path="App.Testing.XUnit/App.Testing.XUnit.csproj">
     <BuildDependency Project="App.Business/App.Business.csproj" />
     <BuildDependency Project="App.Data/App.Data.csproj" />

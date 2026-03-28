@@ -1,22 +1,18 @@
 ﻿using App.Business;
 /*
     TODO: README.md
-    [Attributes]
-        [Fact] is used for a test method that takes no parameters.
-        [Theory] is used for a test method that takes parameters.
-            - It allows you to run the same test with different data sets,
-            - which can be provided using attributes like 
-                - [InlineData]
-                - [MemberData]
-                - [ClassData]
+    [MSTest Attributes]
+        [TestClass]
+        [TestMethod]
     3 A's of Automated Testing
     - Arrange
     - Act
     - Assert
 */
 
-namespace App.Testing.XUnit
+namespace App.Testing.MSTest
 {
+    [TestClass]
     public class BusinessUnitTests
     {
         // Dependency Injection
@@ -27,7 +23,7 @@ namespace App.Testing.XUnit
             _algorithm = new Algorithm();
         }
 
-        [Fact]
+        [TestMethod]
         public void Algorithm_InputZero_ExpectedZero()
         {
             // Arrange
@@ -38,7 +34,7 @@ namespace App.Testing.XUnit
             int result = _algorithm.Fibonacci(input);
 
             // Assert
-            Assert.Equal(expected, result);
+            Assert.AreEqual(expected, result);
         }
     }
 }
